@@ -12,5 +12,17 @@ export const store = reactive({
             movie: 'movie',
             tv: 'tv',
     }
+    },
+    imgInfo: {
+       baseUrl: 'https://image.tmdb.org/t/p/w342',
+       poster_sizes: [
+         "w92",
+         "w154",
+         "w185",
+         "w342",
+         "w500",
+         "w780",
+         "original"
+        ],
     }
 });

@@ -1,5 +1,84 @@
 @use './variables' as *;
 
-body {
-    background-color: $body-bg-color;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+li {
+    width: calc(100% / 3 - 60px);
+    margin: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 2;
+   background-color: black;
+   color: pink;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header div {
+    align-self: center;
+
+}
+h1 {
+    vertical-align: middle;
+    padding: 20px 0;
+
+}
+main {
+    margin-top: 150px;
+}
+
+li {
+    background-color: rgba(0, 0, 0, 0.96);
+    color: white;
+    position: relative;
+    
+}
+li:hover {
+    .none {
+        display: block;
+    }
+}
+
+li:hover {
+   img {
+       opacity: 0.2;
+    
+   } 
+
+}
+
+.none {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.none:hover {
+    img {
+        opacity: 0.2;
+    }
+}
+img {
+    display: block;
 }
